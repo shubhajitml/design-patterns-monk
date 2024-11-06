@@ -1,6 +1,6 @@
 package com.design.patterns.BehaviouralPatterns.MementoPatternBehavioural;
 
-public class TextEditor {
+public class TextEditorMemento {
     private String content;
 
     public void write(String text){
