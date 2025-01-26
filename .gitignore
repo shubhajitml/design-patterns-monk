@@ -133,6 +133,10 @@ local.properties
 # sbteclipse plugin
 .target
 
+target/
+*.original
+.m2/
+
 # Tern plugin
 .tern-project
 
@@ -158,3 +162,4 @@ local.properties
 # Typically, this file would be tracked if it contains build/dependency configurations:
 #.project
 
+.DS_Store
