@@ -3,10 +3,10 @@ package com.design.patterns.BehaviouralPatterns.StrategyPatternBehavioural;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingCart {
+public class ShoppingCartService {
     List<Item> items;
 
-    public ShoppingCart(){
+    public ShoppingCartService(){
         this.items = new ArrayList<>();
     }
 
