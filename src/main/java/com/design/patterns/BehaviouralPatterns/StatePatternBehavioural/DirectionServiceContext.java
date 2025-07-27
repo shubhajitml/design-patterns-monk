@@ -1,10 +1,10 @@
 package com.design.patterns.BehaviouralPatterns.StatePatternBehavioural;
 
 // Context Class for State Pattern
-public class DirectionService {
+public class DirectionServiceContext {
     TransportationMode transportationMode;
 
-    DirectionService(TransportationMode transportationMode) {
+    DirectionServiceContext(TransportationMode transportationMode) {
         this.transportationMode = transportationMode;
     }
 

@@ -1,0 +1,48 @@
+@startuml
+class TrafficLightTest {
++ {static} void main(String[])
+}
+
+enum TrafficLightColor {
++  RED
++  GREEN
++  YELLOW
++  BLINKING
+}
+
+class GreenColorState {
++ void next(TrafficLightContext)
++ TrafficLightColor getColor()
+}
+
+interface TrafficLightState {
+~ void next(TrafficLightContext)
+~ TrafficLightColor getColor()
+}
+
+class TrafficLightContext {
+~ TrafficLightState currentState
++ void setState(TrafficLightState)
++ void next()
++ TrafficLightColor getColor()
+}
+
+
+class YellowColorState {
++ void next(TrafficLightContext)
++ TrafficLightColor getColor()
+}
+
+class RedColorState {
++ void next(TrafficLightContext)
++ TrafficLightColor getColor()
+}
+
+
+TrafficLightState <|.. GreenColorState
+TrafficLightState <|.. YellowColorState
+TrafficLightState <|.. RedColorState
+TrafficLightContext --> TrafficLightState : has a
+TrafficLightTest  --> TrafficLightContext : uses
+
+@enduml
